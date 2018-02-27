@@ -1,0 +1,20 @@
+{
+  "name": "test_webpackv4",
+  "version": "1.0.0",
+  "description": "Webpack 4.0を使ってみる",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mimikun/test_webpackv4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mimikun/test_webpackv4/issues"
+  },
+  "homepage": "https://github.com/mimikun/test_webpackv4#readme"
+}
