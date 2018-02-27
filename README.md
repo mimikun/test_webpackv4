@@ -190,3 +190,34 @@ https://www.valentinog.com/blog/webpack-4-tutorial/
 
 多分大丈夫だと思うのでビルドしてみます。
 
+```
+➜  test_webpackv4 git:(master) npm run build
+
+> test_webpackv4@1.0.0 build /Users/mimikun/GitRepo/test_webpackv4
+> webpack --module-bind 'js=babel-loader' --module-bind 'jsx=babel-loader' --mode production
+
+Hash: 2f7d3439678328f20725
+Version: webpack 4.0.1
+Time: 3794ms
+Built at: 2018-2-27 20:37:46
+  Asset      Size  Chunks             Chunk Names
+main.js  99.2 KiB       0  [emitted]  main
+Entrypoint main = main.js
+  [15] ./src/index.js 2.42 KiB {0} [built]
+    + 15 hidden modules
+```
+
+成功しました！
+
+### 3. npm start して正しく表示されているか見る
+
+ちゃんと表示されています！
+
+![webpack4Appスクショ](https://s3-ap-northeast-1.amazonaws.com/mstdn.mimikun.jp/media_attachments/files/000/031/771/original/898fdca0667fabb9.png)
+
+心配なので、webpack3系でビルドしたアプリと比べてみます。
+このアプリではwebpack.config.jsを使用しています。
+
+![webpack3系Appスクショ](https://s3-ap-northeast-1.amazonaws.com/mstdn.mimikun.jp/media_attachments/files/000/031/773/original/cc2b30c62a813122.png)
+
+どっちも変わりません！大丈夫なようです。
