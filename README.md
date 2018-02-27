@@ -172,3 +172,21 @@ Module build failed: SyntaxError: Unexpected token (6:12)
 WARNING in configuration のエラーは消えましたが、Module build failed のエラーはまだ残っています。
 
 ここについては調べ方が悪いのか、調べても出てきませんでした。babel-preset-envを使いたかった感じです。
+
+ここを見て作業してみます。
+
+https://www.valentinog.com/blog/webpack-4-tutorial/
+
+### 1. .babelrc の作成
+このような内容で作成します。
+
+```
+{
+  "presets": ["env", "react"]
+}
+```
+
+### 2. npm run build してみる
+
+多分大丈夫だと思うのでビルドしてみます。
+
